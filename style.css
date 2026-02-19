@@ -83,7 +83,7 @@ section{
     min-width: 50vh;
 }
 
-#sakums, #izstrade, #ieguvumi, .box-container{
+#sakums, #izstrade, #ieguvumi, #prasmes, .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,7 +174,8 @@ p{
     background: #222;
 }
 
-#izstrade h2, #ieguvumi h2{
+/* #izstrade h2, #ieguvumi h2{ */
+:is(#izstrade, #ieguvumi) h2{
     color: #fff;
 }
 
@@ -182,5 +183,19 @@ p{
     color: #eee;
     font-size: 1.3rem;
     margin-left: 2rem;
+    padding: .5rem 0;
+}
+
+#prasmes ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 3rem;
+}
+
+#prasmes ul li{
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    color: #444;
     padding: .5rem 0;
 }
