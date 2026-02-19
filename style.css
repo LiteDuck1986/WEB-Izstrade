@@ -42,7 +42,8 @@ body{
 
 header{
     width: 100%;
-    background: #fff;
+    background: #ffffffcc;
+    backdrop-filter: blur(1rem);
     padding: 2.5rem 7%;
     border-bottom: .1rem solid #ddd;
     display: flex;
