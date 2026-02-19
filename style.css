@@ -83,7 +83,7 @@ section{
     min-width: 50vh;
 }
 
-#sakums, #izstrade, .box-container{
+#sakums, #izstrade, #ieguvumi, .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,15 +170,15 @@ p{
     padding: 1rem 0;
 }
 
-#izstrade{
+#izstrade, #ieguvumi{
     background: #222;
 }
 
-#izstrade h2{
+#izstrade h2, #ieguvumi h2{
     color: #fff;
 }
 
-#izstrade li{
+#izstrade li, #ieguvumi li{
     color: #eee;
     font-size: 1.3rem;
     margin-left: 2rem;
