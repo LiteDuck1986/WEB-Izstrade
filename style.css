@@ -169,3 +169,18 @@ p{
     color: #666;
     padding: 1rem 0;
 }
+
+#izstrade{
+    background: #222;
+}
+
+#izstrade h2{
+    color: #fff;
+}
+
+#izstrade li{
+    color: #eee;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    padding: .5rem 0;
+}
