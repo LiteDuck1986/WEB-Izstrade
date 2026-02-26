@@ -205,3 +205,68 @@ p{
     color: #444;
     padding: .5rem 0;
 }
+
+#menu{
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1600px){
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 900px){
+    #menu{
+        display: block;
+    }
+
+    nav{
+        position: fixed;
+        top: 7.5rem;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        border-top: .2rem solid rgba(0,0,0,10%);
+        background: #eee;
+    }
+
+    nav ul{
+        flex-flow: column;
+        padding: 2rem;
+    }
+
+    nav li{
+        text-align: center;
+        width: 100%;
+    }
+
+    nav li a{
+        display: block;
+        padding: 1rem;
+        background: #ddd;
+        color: #333;
+        border-radius: 1rem;
+    }
+
+    nav li a:hover{
+        background: var(--maincolor);
+        color: #fff;
+        border-bottom: none;
+    }
+
+    #sakums, #izstrade, #prasmes{
+        flex-flow: column;
+    }
+
+    #ieguvumi{
+        flex-flow: column-reverse;
+    }
+
+    :is(#izstrade, #prasmes, #ieguvumi) :is(image, .content){
+        flex: 1 1;
+    }
+}
