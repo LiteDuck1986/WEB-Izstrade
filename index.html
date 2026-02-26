@@ -17,7 +17,7 @@
 
         <div id="menu" class="fas fa-bars"></div>
 
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="#">Sākums</a></li>
                 <li><a href="#pakalpojumi">Pakalpojumi</a></li>
@@ -157,5 +157,32 @@
             <img src="images/web2.png">
         </div>
     </section>
+
+
+    <!-- Patstāvīgais darbs: -->
+
+
+
+
+
+
+
+
+    <script>
+        let menu = document.querySelector('#menu')
+        let navbar = document.querySelector('nav')
+
+        menu.onclick = () =>{
+            navbar.classList.toggle("nav-toggle")
+            menu.classList.toggle('fa-bars')
+            menu.classList.toggle('fa-times')
+        }
+
+        window.onscroll = () =>{
+            navbar.classList.remove("nav-toggle")
+            menu.classList.add('fa-bars')
+            menu.classList.remove('fa-times')
+        }
+    </script>
 </body>
 </html>
