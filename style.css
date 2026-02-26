@@ -115,7 +115,7 @@ h1{
     font-size: 2.5rem;
 }
 
-h2{
+section h2{
     color: #666;
     font-size: 2rem;
     padding: 2rem 0;
@@ -281,4 +281,74 @@ p{
         text-align: center;
         margin: 1rem 0;
     }
+}
+
+.FooterHeads, .box-container{
+    Display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+footer{
+   width: 100%;
+    background: #333; 
+}
+
+.box-footContainer{
+    Display: flex;
+    justify-content: center;
+    padding: 2.5rem 7%;
+    align-items: center;
+    gap: 10rem;
+    top: 0;
+    z-index: 1;
+}
+
+footer h2{
+    color: #eee;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: .2rem solid #888;
+}
+
+footer ul{
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    gap: 1rem;
+}
+
+footer li a{
+    color: #888;
+    font-size: 1.3rem;
+}
+
+footer div, .box-footer{
+    Display: block;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+footer li a:hover{
+    color: var(--maincolor);
+    border-bottom: .1rem solid var(--maincolor);
+}
+
+footer hr{
+    display: block;
+    width: 87%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+footer #autors{
+    text-align: end;
+    margin-right: 8rem;
 }
